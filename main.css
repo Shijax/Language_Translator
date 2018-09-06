@@ -1,0 +1,28 @@
+/*CSS For Main Header */
+
+.main_header {
+    text-align: center;
+    color: tomato;
+    padding-top: 20px;
+}
+
+/* CSS For Text Block Lenght */
+
+#text_block {
+    width: 300px;
+    text-align: center;
+    border: 3px solid rgb(32, 218, 15);
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrapper_buttons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
