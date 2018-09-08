@@ -4,7 +4,7 @@ Read Me File for Language Translator Project
 
 <p>The project contained in this Repo is for a language translator as built with basic javascript, html, and css for Nashville Software School the week of September 2 through September 8, 2018.</p>
 
-<p>This project was coded by me, and wish references and assistance from students Shane D. Wilson and Rich Fisher (both of whom are getting this JavaScript better than me at the moment).</p>
+<p>This project was coded by me, and with references and assistance from students Shane D. Wilson and Rich Fisher (both of whom are getting this JavaScript better than me at the moment).</p>
 
 ## Functional Purpose
 
