@@ -40,6 +40,17 @@ body {
     padding: 10px;
   }
 
+  /* CSS For Empty DOM Text */
+
+  #translate__div {
+    font-size: 1.5em;
+    font-style: italic
+    font-align: center;
+    text-align: center;
+    padding: 10px;
+    color: tomato;
+  }
+
   /* CSS For Placeholder Text */
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -54,19 +65,3 @@ body {
   :-moz-placeholder { /* Firefox 18- */
     color: pink;
   }
-
-
-/*
-#textInput {
-    margin-left: 25%;
-}
-
-#buttonsDiv {
-    padding-top: 1em;
-}
-
-#textOutput {
-    background-color: white;
-    margin-top: 1em;
-    border: 2px black solid;
-} */
