@@ -41,7 +41,7 @@ let language = '';
 let wordArray = '';
 
 function createWordStore() {
-  document.getElementById('buttonsDiv').addEventListener('click', function() {
+  document.getElementById('buttons__div').addEventListener('click', function() {
       wordStore = document.getElementById('input__field').value;
       if(event.target.id !== 'lucky') {
           language = event.target.id;
