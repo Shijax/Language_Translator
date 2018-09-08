@@ -1,6 +1,15 @@
-/*CSS For Main Header */
+/* CSS For Body */
 
-.main_header {
+body {
+  background-image: linear-gradient(green, blue, red);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CSS For Main Header */
+
+.main__header {
     text-align: center;
     color: tomato;
     padding-top: 20px;
@@ -8,21 +17,51 @@
 
 /* CSS For Text Block Lenght */
 
-#text_block {
-    width: 300px;
+#input__field {
+    width: 500px;
+    font-size: 1.5em;
+    font-style: italic
+    font-align: center;
     text-align: center;
     border: 3px solid rgb(32, 218, 15);
     border-radius: 0;
-    -webkit-appearance: none;
 }
+
+/* CSS For Text Block and Button Wrapping */
 
 .wrapper {
     display: flex;
     justify-content: center;
   }
 
-  .wrapper_buttons {
+  .wrapper__buttons {
     display: flex;
     justify-content: center;
     padding: 10px;
+  }
+
+  /* CSS For Empty DOM Text */
+
+  #translate__div {
+    font-size: 1.5em;
+    font-style: italic
+    font-align: center;
+    text-align: center;
+    padding: 10px;
+    color: tomato;
+  }
+
+  /* CSS For Placeholder Text */
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: pink;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: pink;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: pink;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: pink;
   }

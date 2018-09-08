@@ -9,25 +9,22 @@
 </head>
 <body>
     <header>
-        <h1 class="main_header">Language Translator</h1>
+        <h1 class="main__header">Language Translator</h1>
         <hr>
     </header>
         <div class="wrapper">
         <form>
-            <input type="text" name="english word" placeholder="Seasons Greetings and Happy Holidays" id="text_block"><br>
+            <input id="input__field" type="text" name="english word" placeholder="e.x. Seasons Greetings and Happy Holidays"><br>
         </form>
         </div>
-        <div class="wrapper_buttons">
-            <input type="button" value="Italian"> 
-            <input type="button" value="Croatian"> 
-            <input type="button" value="Spanish"> 
+        <div class="wrapper__buttons" id="buttonsDiv">
+            <button id='spanish' type="button">Translate to Spanish</button>
+            <button id='croatian' type="button">Translate to Croatian</button>  
+            <button id='italian' type="button">Translate to Italian</button>
+            <button id='lucky' type="button">I'm feeling Lucky</button>
         </div>
-
-<!--
-<input type="button" id="button1" value="Add" onclick="add_element_to_array();"></input>
-<input type="button" id="button2" value="Display" onclick="display_array();"></input>
--->
-    
+        </div>
+    <div id="translate__div"></div>
     <script src="main.js"></script>
 </body>
 </html>

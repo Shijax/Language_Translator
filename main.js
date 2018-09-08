@@ -1,35 +1,97 @@
-/* Spanish */
+// SPANISH
 
-{“seasons”:”temporadas", “areetings”:”saludos", "and”:”y”, "happy":"felices", “holidays”:”fiestas”}
+const spanish = {
+seasons: "temporadas",
+greetings: "saludos",
+and: "y",
+happy: "felices",
+holidays: "fiestas"
+};
 
-/* Croatian */
+// CROATIAN
 
-{“seasons”:”godišnje", “areetings”:”pozdrave", "and”:”I”, "happy":"sretne", “holidays”:”praznike”}
+const croatian = {
+seasons: "godišnje",
+greetings: "pozdrave",
+and: "I",
+happy: "sretne",
+holidays: "praznike"
+};
 
-/* Italian */
+// ITALIAN 
 
-{“seasons”:”saluti", “areetings”:”stagionali", "and”:”e”, "happy":"buone", “holidays”:”feste”}
+const italian = {
+seasons: "saluti",
+greetings: "stagionali",
+and: "e",
+happy: "buone",
+holidays: "feste"
+};
 
-
-
-var x = 0;
-var array = Array();
-
-function add_element_to_array()
-{
- array[x] = document.getElementById("text1").value;
- alert("Element: " + array[x] + " Added at index " + x);
- x++;
- document.getElementById("text1").value = "";
+const myLanguage = {
+  'spanish': spanish,
+  'croatian': croatian,
+  'italian': italian,
 }
 
-function display_array()
-{
-   var e = "<hr/>";   
+let translateStore = '';
+let translateString = '';
+let wordStore = '';
+let language = '';
+let wordArray = '';
+
+function createWordStore() {
+  document.getElementById('buttonsDiv').addEventListener('click', function() {
+      wordStore = document.getElementById('input__field').value;
+      if(event.target.id !== 'lucky') {
+          language = event.target.id;
+          createTranslateStore(language);
+      }  
+  } );    
+}
+
+function createTranslateStore(lang) {
+  wordArray = Object.getOwnPropertyNames('spanish')
+  for(let i = 0; i < wordArray.length; i++) {
+      if(wordArray[i] = wordStore) {
+          translateStore = wordArray[i];
+          createTranslateString(translateStore, lang);
+          break;
+      }
+      else {
+          printToDom("I don't know that word.");
+      }
+  }
     
-   for (var y=0; y<array.length; y++)
-   {
-     e += "Element " + y + " = " + array[y] + "<br/>";
-   }
-   document.getElementById("Result").innerHTML = e;
 }
+
+function createTranslateString(word, lng) {
+  translateString = myLanguage[lng][word];
+  console.log(translateString);
+  printToDom(translateString);
+}
+
+function printToDom(string) {
+  const div = document.getElementById('translate__div');
+  div.innerHTML = string;
+}
+
+function lucky() {
+  document.getElementById('lucky').addEventListener('click', function() {
+      wordStore = document.getElementById('input__field').value;
+      let rando = Math.floor((Math.random() * 3) + 1);
+      if(rando === 1) {
+          language = 'spanish';
+      }
+      else if(rando === 2) {
+          language = 'croatian';
+      }
+      else if(rando === 3) {
+          language = 'italian';
+      }
+      createTranslateStore(language);
+} );
+}
+
+createWordStore();
+lucky();
