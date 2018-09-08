@@ -1,35 +1,57 @@
-/* Spanish */
+// SPANISH
 
-{“seasons”:”temporadas", “areetings”:”saludos", "and”:”y”, "happy":"felices", “holidays”:”fiestas”}
+const spanish = {
+seasons: "temporadas",
+greetings: "saludos",
+and: "y",
+happy: "felices",
+holidays: "fiestas"
+};
 
-/* Croatian */
+// CROATIAN
 
-{“seasons”:”godišnje", “areetings”:”pozdrave", "and”:”I”, "happy":"sretne", “holidays”:”praznike”}
+const croatian = {
+seasons: "godišnje",
+greetings: "pozdrave",
+and: "I",
+happy: "sretne",
+holidays: "praznike"
+};
 
-/* Italian */
+// ITALIAN 
 
-{“seasons”:”saluti", “areetings”:”stagionali", "and”:”e”, "happy":"buone", “holidays”:”feste”}
+const italian = {
+seasons: "saluti",
+greetings: "stagionali",
+and: "e",
+happy: "buone",
+holidays: "feste"
+};
 
+let spanishButton = document.getElementById("spanish__button");
+let croatianButton = document.getElementById("croatian__button");
+let italianButton = document.getElementById("italian__button");
 
+const printToDom = (stringToPrint, divId) => {
+const selectedDiv = document.getElementById(divId);
+selectedDiv.innerHTML = stringToPrint;
+};
 
-var x = 0;
-var array = Array();
+const toSpanish = () => {
+let inputText = document.getElementById("input__field").value;
+printToDom(inputText, "translate__div");
+};
 
-function add_element_to_array()
-{
- array[x] = document.getElementById("text1").value;
- alert("Element: " + array[x] + " Added at index " + x);
- x++;
- document.getElementById("text1").value = "";
-}
+const toCroatian = () => {
+let inputText = document.getElementById("input__field").value;
+printToDom(inputText, "translate__div");
+};
 
-function display_array()
-{
-   var e = "<hr/>";   
-    
-   for (var y=0; y<array.length; y++)
-   {
-     e += "Element " + y + " = " + array[y] + "<br/>";
-   }
-   document.getElementById("Result").innerHTML = e;
-}
+const toItalian = () => {
+let inputText = document.getElementById("input__field").value;
+printToDom(inputText, "translate__div");
+};
+
+spanishButton.addEventListener("click", toSpanish);
+croatianButton.addEventListener("click", toCroatian);
+italianButton.addEventListener("click", toItalian);

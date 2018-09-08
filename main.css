@@ -1,4 +1,4 @@
-/*CSS For Main Header */
+/* CSS For Main Header */
 
 .main_header {
     text-align: center;
@@ -9,12 +9,16 @@
 /* CSS For Text Block Lenght */
 
 #text_block {
-    width: 300px;
+    width: 500px;
+    font-size: 1.5em;
+    font-style: italic
+    font-align: center;
     text-align: center;
     border: 3px solid rgb(32, 218, 15);
     border-radius: 0;
-    -webkit-appearance: none;
 }
+
+/* CSS For Text Block and Button Wrapping */
 
 .wrapper {
     display: flex;
@@ -25,4 +29,19 @@
     display: flex;
     justify-content: center;
     padding: 10px;
+  }
+
+  /* CSS For Placeholder Text */
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: pink;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: pink;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: pink;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: pink;
   }
