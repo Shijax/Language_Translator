@@ -28,15 +28,6 @@ happy: "buone",
 holidays: "feste"
 };
 
-// const spanishButton = document.getElementById("spanish__button");
-// const croatianButton = document.getElementById("croatian__button");
-// const italianButton = document.getElementById("italian__button");
-
-// const printToDom = (stringToPrint, divId) => {
-// const selectedDiv = document.getElementById(divId);
-// selectedDiv.innerHTML = stringToPrint;
-// };
-
 const myLanguage = {
   'spanish': spanish,
   'croatian': croatian,
