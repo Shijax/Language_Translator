@@ -1,6 +1,15 @@
+/* CSS For Body */
+
+body {
+  background-image: linear-gradient(green, blue, red);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* CSS For Main Header */
 
-.main_header {
+.main__header {
     text-align: center;
     color: tomato;
     padding-top: 20px;
@@ -8,7 +17,7 @@
 
 /* CSS For Text Block Lenght */
 
-#text_block {
+#input__field {
     width: 500px;
     font-size: 1.5em;
     font-style: italic
@@ -25,7 +34,7 @@
     justify-content: center;
   }
 
-  .wrapper_buttons {
+  .wrapper__buttons {
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -45,3 +54,19 @@
   :-moz-placeholder { /* Firefox 18- */
     color: pink;
   }
+
+
+/*
+#textInput {
+    margin-left: 25%;
+}
+
+#buttonsDiv {
+    padding-top: 1em;
+}
+
+#textOutput {
+    background-color: white;
+    margin-top: 1em;
+    border: 2px black solid;
+} */

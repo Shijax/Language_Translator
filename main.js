@@ -28,30 +28,79 @@ happy: "buone",
 holidays: "feste"
 };
 
-let spanishButton = document.getElementById("spanish__button");
-let croatianButton = document.getElementById("croatian__button");
-let italianButton = document.getElementById("italian__button");
+const spanishButton = document.getElementById("spanish__button");
+const croatianButton = document.getElementById("croatian__button");
+const italianButton = document.getElementById("italian__button");
 
 const printToDom = (stringToPrint, divId) => {
 const selectedDiv = document.getElementById(divId);
 selectedDiv.innerHTML = stringToPrint;
 };
 
-const toSpanish = () => {
-let inputText = document.getElementById("input__field").value;
-printToDom(inputText, "translate__div");
-};
+// const myLanguage = {
+//   'french': french,
+//   'spanish': spanish,
+//   'german': german,
+// }
 
-const toCroatian = () => {
-let inputText = document.getElementById("input__field").value;
-printToDom(inputText, "translate__div");
-};
+// let translateStore = '';
+// let translateString = '';
+// let wordStore = '';
+// let language = '';
+// let wordArray = '';
 
-const toItalian = () => {
-let inputText = document.getElementById("input__field").value;
-printToDom(inputText, "translate__div");
-};
+// function createWordStore() {
+//   document.getElementById('buttonsDiv').addEventListener('click', function() {
+//       wordStore = document.getElementById('textInput').value;
+//       if(event.target.id !== 'lucky') {
+//           language = event.target.id;
+//           createTranslateStore(language);
+//       }  
+//   } );    
+// }
 
-spanishButton.addEventListener("click", toSpanish);
-croatianButton.addEventListener("click", toCroatian);
-italianButton.addEventListener("click", toItalian);
+// function createTranslateStore(lang) {
+//   wordArray = Object.getOwnPropertyNames('french')
+//   for(let i = 0; i < wordArray.length; i++) {
+//       if(wordArray[i] = wordStore) {
+//           translateStore = wordArray[i];
+//           createTranslateString(translateStore, lang);
+//           break;
+//       }
+//       else {
+//           printToDom("Im sorry, I only know seven words plus this phrase explaining that fact");
+//       }
+//   }
+    
+// }
+
+// function createTranslateString(word, lng) {
+//   translateString = myLanguage[lng][word];
+//   console.log(translateString);
+//   printToDom(translateString);
+// }
+
+// function printToDom(string) {
+//   const div = document.getElementById('textOutput');
+//   div.innerHTML = string;
+// }
+
+// function lucky() {
+//   document.getElementById('lucky').addEventListener('click', function() {
+//       wordStore = document.getElementById('textInput').value;
+//       let rando = Math.floor((Math.random() * 3) + 1);
+//       if(rando === 1) {
+//           language = 'french';
+//       }
+//       else if(rando === 2) {
+//           language = 'spanish';
+//       }
+//       else if(rando === 3) {
+//           language = 'german';
+//       }
+//       createTranslateStore(language);
+// } );
+// }
+
+// createWordStore();
+// lucky();
