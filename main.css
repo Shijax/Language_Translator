@@ -1,18 +1,30 @@
 /* CSS For Body */
 
 body {
-  background-image: linear-gradient(green, blue, red);
+  background:#000000;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+header {
+  background-image: url(./img/christmas-header.jpg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-size: 100% 100%;
 }
 
 /* CSS For Main Header */
 
 .main__header {
     text-align: center;
-    color: tomato;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
     padding-top: 20px;
+    letter-spacing: 3px;
 }
 
 /* CSS For Text Block Lenght */
