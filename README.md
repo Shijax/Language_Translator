@@ -19,5 +19,4 @@ Read Me File for Language Translator Project
 2. CSS
 3. JavaScript
 
-##### Updates
-* As of September 8, 2018, project is working to translate single words in the known list, but not multiple words.
+<img src="https://github.com/Shijax/Language_Translator/blob/master/langauge.jpeg>
