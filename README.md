@@ -19,4 +19,4 @@ Read Me File for Language Translator Project
 2. CSS
 3. JavaScript
 
-<img src="https://github.com/Shijax/Language_Translator/blob/master/langauge.jpeg>
+<img src="https://github.com/Shijax/Language_Translator/blob/master/langauge.jpeg">
