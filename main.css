@@ -29,7 +29,7 @@ header {
 
 /* CSS For Text Block Lenght */
 
-#input__field {
+#text {
     width: 500px;
     font-size: 1.5em;
     font-style: italic
@@ -54,7 +54,7 @@ header {
 
   /* CSS For Empty DOM Text */
 
-  #translate__div {
+  #translatedWord {
     font-size: 1.5em;
     font-style: italic
     font-align: center;
